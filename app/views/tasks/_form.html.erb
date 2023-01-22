@@ -8,6 +8,8 @@
     <%= f.text_area :details %>
   </div>
   <div>
-    <%= f.submit %>
+    <%= f.submit class: 'btn btn-primary' %>
   </div>
 <% end %>
+
+<%= link_to 'list all tasks', tasks_path, class: 'btn btn-info mt-2' %>
