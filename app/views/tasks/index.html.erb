@@ -6,7 +6,7 @@
         <li class="list-group-item"><input type="checkbox" class="my-2">
           <%= link_to task.title, task_path(task), class: "fs-5 py-3 ms-2 text-decoration-none" %>
           <%= link_to task_path(task), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
-          <i class="fa-sharp fa-solid fa-trash text-dark fs-6 ms-2"></i>
+          <i class="fa-sharp fa-solid fa-trash text-secondary fs-6 ms-2 d-inline text-end"></i>
           <% end %>
         </li>
       <% end %>
